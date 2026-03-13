@@ -1,0 +1,306 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Kalyan",
+      "email": "kalyan@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "2",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "161b",
+      "name": "sid",
+      "email": "sid@gmail.com",
+      "password": "12345678",
+      "createdAt": "2026-03-11T16:27:40.092Z"
+    },
+    {
+      "id": "1773255789293",
+      "name": "ram",
+      "email": "ram@gmail.com",
+      "password": "12345678",
+      "createdAt": "2026-03-11T19:03:09.293Z"
+    }
+  ],
+  "courses": [
+    {
+      "id": "101",
+      "title": "React JS",
+      "description": "Learn React fundamentals: components, props, state, and hooks with hands-on practice.",
+      "instructor": "John",
+      "duration": "5 hours",
+      "level": "Beginner",
+      "category": "Frontend",
+      "thumbnail": "https://reactjs.org/logo-og.png",
+      "rating": 4.6,
+      "lessons": [
+        {
+          "id": "101-1",
+          "title": "Install a build tool",
+          "duration": "6 min",
+          "order": 1,
+          "topics": [
+            {
+              "id": "101-1-1",
+              "title": "Install a build tool?",
+              "completed": false,
+              "content": "Step 1: Install a build tool. The first step is to install a build tool like vite, parcel, or rsbuild."
+            },
+            {
+              "id": "101-1-2",
+              "title": "Build Common Application Patterns?",
+              "completed": false,
+              "content": "Step 2: Build common application patterns like routing, data fetching, and styling."
+            }
+          ]
+        },
+        {
+          "id": "101-2",
+          "title": "Introduction to React",
+          "duration": "6 min",
+          "order": 2,
+          "topics": [
+            {
+              "id": "101-2-1",
+              "title": "What is React?",
+              "completed": false,
+              "content": "React is a JavaScript library used to build UI with reusable components."
+            },
+            {
+              "id": "101-2-2",
+              "title": "Why use React?",
+              "completed": false,
+              "content": "React helps build fast, reusable, and dynamic front-end applications."
+            }
+          ]
+        },
+        {
+          "id": "101-3",
+          "title": "JSX Basics",
+          "duration": "12 min",
+          "order": 3,
+          "topics": [
+            {
+              "id": "101-3-1",
+              "title": "What is JSX?",
+              "completed": false,
+              "content": "JSX lets you write HTML-like code inside JavaScript."
+            },
+            {
+              "id": "101-3-2",
+              "title": "JSX Rules",
+              "completed": false,
+              "content": "JSX must have one parent element and uses className instead of class."
+            }
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/bMknfKXIFA8"
+    },
+    {
+      "id": "102",
+      "title": "JavaScript for Web Developers",
+      "description": "Core JavaScript concepts including ES6, async/await, and DOM.",
+      "instructor": "Anita",
+      "duration": "6 hours",
+      "level": "Beginner",
+      "category": "Frontend",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+      "rating": 4.5,
+      "lessons": [
+        {
+          "id": "102-1",
+          "title": "Variables",
+          "duration": "10 min",
+          "order": 1,
+          "topics": [
+            {
+              "id": "102-1-1",
+              "title": "What is a Variable?",
+              "completed": false,
+              "content": "A variable stores a value in JavaScript."
+            },
+            {
+              "id": "102-1-2",
+              "title": "var, let, const",
+              "completed": false,
+              "content": "JavaScript provides var, let, and const for variable declaration."
+            }
+          ]
+        },
+        {
+          "id": "102-2",
+          "title": "Functions",
+          "duration": "14 min",
+          "order": 2,
+          "topics": [
+            {
+              "id": "102-2-1",
+              "title": "What is a Function?",
+              "completed": false,
+              "content": "A function is a reusable block of code."
+            },
+            {
+              "id": "102-2-2",
+              "title": "Arrow Functions",
+              "completed": false,
+              "content": "Arrow functions provide shorter syntax for functions."
+            }
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/W6NZfCO5SIk"
+    },
+    {
+      "id": "1773247172005",
+      "title": "Full Stack MERN Project",
+      "description": "Build an e-commerce MERN stack project.",
+      "instructor": "Rahul Verma",
+      "duration": "12 hours",
+      "level": "Advanced",
+      "category": "Full Stack",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyuocP6BvwpQ_837S2aqbT3FXrU4T70pPBIg&s",
+      "rating": 4.9,
+      "videoUrl": "https://www.youtube.com/embed/7CqJlxBYj-M",
+      "lessons": []
+    }
+  ],
+  "enrollments": [
+    {
+      "id": "612b",
+      "userId": "1",
+      "courseId": "101",
+      "enrolledAt": "2026-03-08T18:59:39.468Z",
+      "status": "enrolled"
+    },
+    {
+      "id": "a6ed",
+      "userId": "1",
+      "courseId": "102",
+      "enrolledAt": "2026-03-08T19:01:37.328Z",
+      "status": "enrolled"
+    },
+    {
+      "id": "7be6",
+      "userId": "161b",
+      "courseId": "102",
+      "enrolledAt": "2026-03-11T19:02:31.125Z",
+      "status": "enrolled"
+    },
+    {
+      "id": "5922",
+      "userId": "161b",
+      "courseId": "101",
+      "enrolledAt": "2026-03-11T19:02:46.776Z",
+      "status": "enrolled"
+    },
+    {
+      "id": "1773256246084",
+      "userId": "1773255789293",
+      "courseId": "101",
+      "enrolledAt": "2026-03-11T19:10:46.084Z",
+      "status": "enrolled"
+    },
+    {
+      "id": "1773256414277",
+      "userId": "1773255789293",
+      "courseId": "1773247172005",
+      "enrolledAt": "2026-03-11T19:13:34.278Z",
+      "status": "enrolled"
+    },
+    {
+      "id": "1773256443766",
+      "userId": "1773255789293",
+      "courseId": "102",
+      "enrolledAt": "2026-03-11T19:14:03.766Z",
+      "status": "enrolled"
+    },
+    {
+      "id": "1773257968195",
+      "userId": "161b",
+      "courseId": "1773247172005",
+      "enrolledAt": "2026-03-11T19:39:28.195Z",
+      "status": "enrolled"
+    }
+  ],
+  "progress": [
+    {
+      "id": "3e17",
+      "userId": "1",
+      "courseId": "101",
+      "completedTopicIds": [],
+      "percent": 0,
+      "currentTopicId": "",
+      "updatedAt": "2026-03-08T20:25:45.553Z"
+    },
+    {
+      "id": "1b27",
+      "userId": "161b",
+      "courseId": "102",
+      "completedTopicIds": [
+        "102-1-2"
+      ],
+      "percent": 25,
+      "currentTopicId": "102-1-2",
+      "updatedAt": "2026-03-12T04:38:26.009Z"
+    },
+    {
+      "id": "e923",
+      "userId": "161b",
+      "courseId": "101",
+      "completedTopicIds": [],
+      "percent": 0,
+      "currentTopicId": "",
+      "updatedAt": "2026-03-11T19:02:46.797Z"
+    },
+    {
+      "id": "1773256246099",
+      "userId": "1773255789293",
+      "courseId": "101",
+      "completedTopicIds": [
+        "101-1-2",
+        "101-1-1",
+        "101-2-1",
+        "101-2-2",
+        "101-3-1",
+        "101-3-2"
+      ],
+      "percent": 100,
+      "currentTopicId": "101-3-2",
+      "updatedAt": "2026-03-11T19:15:11.710Z"
+    },
+    {
+      "id": "1773256414293",
+      "userId": "1773255789293",
+      "courseId": "1773247172005",
+      "completedTopicIds": [],
+      "percent": 0,
+      "currentTopicId": "",
+      "updatedAt": "2026-03-11T19:13:34.293Z"
+    },
+    {
+      "id": "1773256443781",
+      "userId": "1773255789293",
+      "courseId": "102",
+      "completedTopicIds": [],
+      "percent": 0,
+      "currentTopicId": "102-2-2",
+      "updatedAt": "2026-03-11T19:14:25.202Z"
+    },
+    {
+      "id": "1773257968209",
+      "userId": "161b",
+      "courseId": "1773247172005",
+      "completedTopicIds": [],
+      "percent": 0,
+      "currentTopicId": "",
+      "updatedAt": "2026-03-11T19:39:28.209Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
