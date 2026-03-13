@@ -1,7 +1,7 @@
 import axios from "axios";
-
-const COURSE_API_URL = "http://localhost:5000/api/courses";
-const AUTH_API_URL = "http://localhost:5000/api/auth";
+const API_URL = import.meta.env.VITE_API_URL 
+const COURSE_API_URL = `${API_URL}/api/courses`;
+const AUTH_API_URL = `${API_URL}/api/auth`;
 
 // -------------------- AUTH --------------------
 
