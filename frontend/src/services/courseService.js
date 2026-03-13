@@ -1,5 +1,6 @@
 import axios from "axios";
-const API_URL = import.meta.env.VITE_API_URL 
+
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 const COURSE_API_URL = `${API_URL}/api/courses`;
 const AUTH_API_URL = `${API_URL}/api/auth`;
 
@@ -30,7 +31,6 @@ export const signupUser = async (data) => {
 export const logoutUser = () => {
   localStorage.removeItem("user");
   localStorage.removeItem("token");
-  // enrolled courses / progress ni remove cheyyakudadhu
 };
 
 // -------------------- COURSES --------------------
@@ -117,7 +117,7 @@ const getUserStorageKey = (type) => {
   return `${type}_${userId}`;
 };
 
-// -------------------- ENROLLMENT (user-wise localStorage) --------------------
+// -------------------- ENROLLMENT --------------------
 
 export const getEnrolledCourses = () => {
   const key = getUserStorageKey("enrolledCourses");
@@ -152,7 +152,7 @@ export const isCourseEnrolled = (courseId) => {
   return enrolled.includes(String(courseId));
 };
 
-// -------------------- PROGRESS (user-wise localStorage) --------------------
+// -------------------- PROGRESS --------------------
 
 export const getCourseProgressMap = () => {
   const key = getUserStorageKey("courseProgress");
