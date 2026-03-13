@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API_URL = (import.meta.env.VITE_API_URL || "http://localhost:5000").replace(/\/$/, "");
 const COURSE_API_URL = `${API_URL}/api/courses`;
 const AUTH_API_URL = `${API_URL}/api/auth`;
 
@@ -19,13 +19,21 @@ export const getToken = () => {
 };
 
 export const loginUser = async (data) => {
-  const res = await axios.post(`${AUTH_API_URL}/login`, data);
-  return res.data;
+  try {
+    const res = await axios.post(`${AUTH_API_URL}/login`, data);
+    return res.data;
+  } catch (error) {
+    throw new Error(error.response?.data?.message || "Login failed");
+  }
 };
 
 export const signupUser = async (data) => {
-  const res = await axios.post(`${AUTH_API_URL}/register`, data);
-  return res.data;
+  try {
+    const res = await axios.post(`${AUTH_API_URL}/register`, data);
+    return res.data;
+  } catch (error) {
+    throw new Error(error.response?.data?.message || "Signup failed");
+  }
 };
 
 export const logoutUser = () => {
